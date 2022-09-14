@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment"
+    android:id="@+id/app_navigation">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="hr.ferit.sandroblavicki.sandroapp.home.HomeFragment"
+        android:label="Fragment home"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/navigateToPostFragment"
+            app:destination="@id/postFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="hr.ferit.sandroblavicki.sandroapp.PostFragment"
+        android:label="Post fragment"
+        tools:layout="@layout/post_frament" >
+
+        <argument
+            android:name="textArg"
+            app:argType="string"
+            android:defaultValue="default string"/>
+    </fragment>
+
+</navigation>
