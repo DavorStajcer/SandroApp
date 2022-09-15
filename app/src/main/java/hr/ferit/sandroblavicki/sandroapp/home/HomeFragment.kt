@@ -5,11 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import hr.ferit.sandroblavicki.sandroapp.databinding.ActivityMainBinding
 import hr.ferit.sandroblavicki.sandroapp.databinding.HomeFragmentBinding
 import hr.ferit.sandroblavicki.sandroapp.repositories.PostRepositoryImpl
 
@@ -32,7 +29,7 @@ class HomeFragment : Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        adapter = HomePageRecyclerViewAdapter(requireContext(), listOf())
+        adapter = HomePageRecyclerViewAdapter(requireContext(), listOf(),viewModel)
         viewModel.fetchPosts()
 
         viewModel.navigationDelegate.observe(viewLifecycleOwner) { navDirections ->

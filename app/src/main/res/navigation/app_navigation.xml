@@ -17,12 +17,12 @@
 
     <fragment
         android:id="@+id/postFragment"
-        android:name="hr.ferit.sandroblavicki.sandroapp.PostFragment"
+        android:name="hr.ferit.sandroblavicki.sandroapp.post.PostFragment"
         android:label="Post fragment"
         tools:layout="@layout/post_frament" >
 
         <argument
-            android:name="textArg"
+            android:name="post"
             app:argType="string"
             android:defaultValue="default string"/>
     </fragment>

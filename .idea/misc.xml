@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/davor/AndroidStudioProjects/SandroApp/app/src/main/res/layout/comment.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/davor/AndroidStudioProjects/SandroApp/app/src/main/res/layout/home_fragment.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/davor/AndroidStudioProjects/SandroApp/app/src/main/res/layout/post.xml" value="0.2375" />
+        <entry key="..\:/Users/davor/AndroidStudioProjects/SandroApp/app/src/main/res/layout/post_frament.xml" value="0.25769927536231885" />
       </map>
     </option>
   </component>
